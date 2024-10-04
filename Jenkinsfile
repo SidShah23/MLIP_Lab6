@@ -17,7 +17,7 @@ pipeline {
 
                 # TODO fill out the path to conda here
                 '''
-                sudo /home/team02/miniconda3/bin/conda init
+                sudo /home/team02/miniconda3/bin/conda mlip bin activate
 
                 sudo /home/team02/miniconda3/bin/conda run -n mlip pytest
                 '''
