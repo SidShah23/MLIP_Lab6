@@ -17,7 +17,7 @@ pipeline {
 
                 # TODO fill out the path to conda here
                 '''
-                source ~/miniconda3/bin/activate mlip
+                source /home/team02/miniconda3/bin/activate mlip
                 pytest --maxfail=1 --disable-warnings
                 '''
                 # TODO Complete the command to run pytest
