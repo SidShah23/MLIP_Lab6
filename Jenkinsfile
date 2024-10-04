@@ -17,9 +17,8 @@ pipeline {
 
                 # TODO fill out the path to conda here
                 '''
-                sudo /home/team02/miniconda3/bin/conda mlip bin activate
-
-                sudo /home/team02/miniconda3/bin/conda run -n mlip pytest
+                source ~/miniconda3/bin/activate mlip
+                pytest --maxfail=1 --disable-warnings
                 '''
                 # TODO Complete the command to run pytest
                 # sudo /home/team02/miniconda3/bin/conda run -n <Envinronment Name> <Command you want to run>
